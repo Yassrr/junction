@@ -9,7 +9,7 @@ function runrun(e){
 const ret = document.querySelector('.btn');
 ret.addEventListener('click',ButtonBtn)
 function ButtonBtn(e){
-  window.location.href = "http://127.0.0.1:5500/junction/mainPage.html";
+  window.location.href = "https://yassrr.github.io/junction/mainPage.html";
   
   e.preventDefault();
 }
