@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7em;
+  position: relative;
+}
+
+.container1{
+  background: url('../img/principal.png');
+}
+
+#navbar{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+}
+#nav-bar ul {
+  list-style: none;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+#nav-bar ul li{
+  font-size: 20px;
+}
+#nav-bar ul li .techmo{
+  color: cadetblue;
+  font-weight: bold;
+}
+
+#nav-bar ul::after{
+  content: "";
+  width: 600px;
+  height: 2px;
+  bottom: 0;
+  position: absolute;
+  background-color: gray;
+
+}
+
+#services{
+  /* background: url('../img/principal.png') no-repeat center center/cover; */
+}
+
+a {
+  color: rgb(207, 95, 21);
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.hidder{
+  display: none;  
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: orangered;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.image{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+
+#services{  
+  background: #fff;
+}
+
+
+#services .container1 {
+  margin: 0px auto;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+#services .container1 .distination{
+  /* background: url('../img/showcase.jpg') no-repeat center center/cover; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#services .container1 .distination > h1{
+  margin-bottom: 20px;
+}
+#services .container1 .distination .dist{
+  color: purple;
+  font-size: 3rem;
+
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1rem;
+  color: #fff;
+  background: orangered;
+  padding: 0.5rem 20px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+#services .container1 .publicAndprivate .public-service{
+  padding: 1.5rem 2rem;
+  position: relative;
+}
+#services .container1 .publicAndprivate .public-service::before{
+  content: "";
+  width: 79%;
+  position: absolute;
+  height: 2px;
+  background-color: gray;
+  top: 40px;
+  right: 48px;
+}
+#services .container1 .publicAndprivate .public-service .container-pub{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.map-information{
+  padding: 0px 15px;
+}
+#services .container1 .publicAndprivate .public-service .container-pub .pub,
+#services .container1 .publicAndprivate .public-service .container-pub .maps{
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  background: #fff;
+  flex-direction: column;
+  border: 1px solid rgb(121, 118, 118);
+  border-radius: 50px;
+  text-align: center;
+  margin: 0.5rem ;
+}
+
+#services .container1 .publicAndprivate .public-service .container-pub{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+
+#services .container1 .publicAndprivate .public-service .container-pub .pub .locationTo p{
+  display: inline-block;
+  margin: 0px 4px;
+}
+
+#services .container1 .publicAndprivate .public-service .container-pub .pub .heure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+#services .container1 .publicAndprivate .public-service .container-pub .pub .heure .depart .demarage,
+#services .container1 .publicAndprivate .public-service .container-pub .pub .heure .arrive .arrived,
+.time,.cost{
+  display: inline-block;
+  margin-right: 5px;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+
+#services .container1 .publicAndprivate .private-service{
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  
+}
+#services .container1 .publicAndprivate .private-service::before{
+  content: "";
+  width: 76%;
+  position: absolute;
+  height: 2px;
+  background-color: gray;
+  top: 40px;
+  left: 275px;
+}
+
+#services .container1 .publicAndprivate .private-service .container-pub{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 50px;
+
+}
+
+
+#services .container1 .publicAndprivate .private-service .container-pub  .container .photo{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+
+#services .container1 .publicAndprivate .private-service .container-pub  .photo::after{
+  content:"Burger King 50% Offer";
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  top: 30px;
+  left: 65px;
+  color: yellow;
+}
+#services .container1 .publicAndprivate .private-service .container-pub  .photo::before{
+  content:"BUY NOW";
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  bottom: 60px;
+  left: 80px;
+  color: yellow;
+}
+
+.logo-stat{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.img{
+  width: 100px;
+  height: 50px;
+}
+.img2{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 120px;
+}
+.logo-stat .img1{
+ margin-bottom: 30px;
+  width: 100px;
+  height: 20px;
+}
+
+.map-information .btn{
+  width: 90%;
+    text-align: center;
+}
+.text-6 {
+  color: rgb(198, 86, 198);
+}
+.btn:hover{
+  background: rgb(128, 43, 12);
+}
+
+.map-js{
+  width: 100%;
+  height: 100%;
+}
+#map{
+  width: 100%;
+  height: 300px;
+}
+
+.google-map{
+  margin-top: 20px;
+}
+.text-6 {
+  color: rgb(198, 86, 198);
+}
+.techno{
+
+  background: linear-gradient(to right,rgb(13, 255, 13), rgb(137, 222, 100), rgb(138, 225, 237));
+  border-radius: 5px;
+  height: fit-content;
+}
+
+
+.menu-show{
+  width: 700px;
+  margin: 0px auto;
+  display: none;
+}
+
+.menu-show .menu-container{
+  width: 100%;
+  padding: 20px 30px;
+}
+
+
+form input:first-of-type{
+  display: block;
+  width: 85%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.btn-light{
+  color: orangered;
+  background: #fff;
+}
+
+.logo1{
+  background: url('../img/Heetch.png');
+  width: 30px;
+  height: 30px;
+}
+.right-side{
+  display: flex;
+  justify-content: space-evenly;
+}
