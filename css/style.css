@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7em;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  color: rgb(207, 95, 21);
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.container,.container1 {
+  margin: auto;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+#services .container1 {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* span */
+#services .container1 .distination{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+
+#services .container1 .publicAndPrivate .public-service .container-pub{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+#services .container1 .publicAndPrivate .public-service .container-pub .pub{
+  width: 80px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.text-primary {
+  color: purple;
+}
+.text-secondary {
+  color: rosybrown;
+}
+.text-3 {
+  color: rgb(128, 0, 45);
+}
+.text-4 {
+  color: rgb(239, 29, 29);
+}
+.text-5 {
+  color: rgb(36, 0, 128);
+}
+.text-6 {
+  color: rgb(198, 86, 198);
+}
+
+.lead {
+  font-size: 35px;
+  color: #333;
+}
+
+
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+
+/* Padding */
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+
+
+#showcase {
+  background: url('../img/First\ Page.png') no-repeat center center/cover;
+  height: 100vh;
+  opacity: 0.9;
+  position: relative;
+}
+
+#showcase .showcase-content {
+  width: 70%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 85px;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1em;
+}
+
+.places{
+  width: 70%;
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  padding: 13px 20px;
+  border-radius: 20px;
+  margin-left: 1rem;
+}
+
+.form-principal{
+  position: relative;
+}
+.form-principal::after{
+font-family: "<i class='FontAwesome'></i>";
+content: "\f276";
+position: absolute;
+color: black;
+font-weight: 900;
+width: 20px;
+height: 20px;
+left: 64px;
+bottom: 18px;
+}
+
+/* #showcase .container .showcase-content .form-principal .places::before{ 
+  content:"yes we areafsfafs";
+  position: absolute;
+  color: black;
+  top: -10px;
+  left: 0px;
+  
+} */
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: orangered;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+#navbar{
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#navbar .container { 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#navbar .container > div p{
+  display: inline-block;
+  margin-right:  5px;
+}
+
+.visit-us{
+  color: #333;
+  position: relative;
+  z-index: 3;
+}
+/* 2 eme page */
+#services{
+  width: 1100px;
+  margin: auto 0;
+}
+
+.search{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 185px;
+  right: 120px;
+  text-align: center;
+}
+
+
+.search .search-map{
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 /28%);
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.techno{
+
+  background: linear-gradient(to right,rgb(13, 255, 13), rgb(137, 222, 100), rgb(138, 225, 237));
+  border-radius: 5px;
+  height: fit-content;
+
+}
