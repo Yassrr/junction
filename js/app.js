@@ -15,7 +15,7 @@ btn.addEventListener('click',function(){
 
 document.querySelector('btn').addEventListener('click',runrun);
 function runrun(e){
-  window.location.href = "http://127.0.0.1:5500/junction/index.html";
+  window.location.href = "https://yassrr.github.io/junction/index.html";
 
   e.preventDefault();
 }
